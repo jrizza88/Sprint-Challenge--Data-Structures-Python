@@ -9,17 +9,17 @@ class RingBuffer:
 
     def append(self, item):
         # if the item exists
-        if self.current is not None:
-        # store it
-            self.storage.move_to_end(item)
-            return
-
+       self.current 
 
     def get(self):
         # Note:  This is the only [] allowed
         list_buffer_contents = []
 
         # TODO: Your code here
+        current = self.storage.head
+        while current is not None:
+            list_buffer_contents.append(current.value)
+            current = current.next
 
         return list_buffer_contents
 

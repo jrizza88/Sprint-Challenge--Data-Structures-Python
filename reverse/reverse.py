@@ -64,11 +64,6 @@ class LinkedList:
       current = nxt
       nxt = current.next_node
       current.next_node = previous
-
-      
-     
-
-
       print("PREV", previous)
       print("CUR", current)
       print("NXT", nxt)
