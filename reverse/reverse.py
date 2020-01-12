@@ -1,3 +1,5 @@
+import unittest
+
 class Node:
   def __init__(self, value=None, next_node=None):
     # the value at this linked list node
@@ -42,6 +44,36 @@ class LinkedList:
     # if we've gotten here, then the target node isn't in our list
     return False
 
+
+
   def reverse_list(self):
     # TO BE COMPLETED
-    pass
+    if self.head == None:
+      return None
+    if self.head and self.head.next_node is None:
+      return self.head
+    previous = None
+    # write curr to equal self.head
+    current = self.head
+    nxt = current.next_node 
+    current.next_node = None
+
+    # run a while loop while curr head is not null
+    while nxt:
+      previous = current
+      current = nxt
+      nxt = current.next_node
+      current.next_node = previous
+
+      
+     
+
+
+      print("PREV", previous)
+      print("CUR", current)
+      print("NXT", nxt)
+      print("\n")
+    self.head = current
+    
+    # now make self.head = to something...
+    # self.head = nxt
