@@ -40,5 +40,5 @@ print (f"runtime: {end_time - start_time} seconds")
 # What's the best time you can accomplish with no restrictions on techniques or data
 # structures?
 
-# original run time was 8 seconds with o(n)
-# new run time is --  runtime: 0.14606523513793945 seconds o (log n)
+# original run time was 8 seconds with o(n^2)
+# new run time is --  runtime: 0.14606523513793945 seconds o (n)
